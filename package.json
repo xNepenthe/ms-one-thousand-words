@@ -1,0 +1,31 @@
+{
+  "name": "ms-one-thousand-words",
+  "version": "0.0.1",
+  "description": "Backend MS to manage the 1000 words project",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "tsc -p ./tsconfig.json",
+    "dev": "nodemon src/index.ts",
+    "test": "jest --collect-coverage"
+  },
+  "author": "Fernando Milano",
+  "license": "GPL-2.0-only",
+  "dependencies": {
+    "@fastify/cors": "^9.0.0",
+    "@fastify/helmet": "^11.1.1",
+    "@fastify/jwt": "^8.0.0",
+    "@fastify/swagger": "^8.14.0",
+    "dotenv": "^16.4.1",
+    "fastify": "^4.25.2",
+    "fastify-blipp": "^3.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.10",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  }
+}
